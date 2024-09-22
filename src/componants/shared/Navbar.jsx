@@ -1,60 +1,69 @@
 import React from 'react';
+import logo from "../../assets/navlogo.jpg";
 
 const Navbar = () => {
     return (
         <>
-    <div className="navbar bg-base-100">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
-      </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
-    </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+   <div className="navbar fixed  bg-sky-950 top-0 text-white z-20" id="nabbarhide">
+
+<div className="navbar-start">
+    <img src={logo} alt="Logo" className="w-14"/>
+    <span className="text-2xl font-bold ml-2">Brothers Book House</span>
+
   </div>
-  <div className="navbar-center hidden lg:flex">
+   
+  
+
+  <div id="navbtnId" className="navbar-center hidden lg:flex md:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
+        <li><a id="potato"  className="navbtn hover:bg-red-700 active1" href="#mainpart">Home</a></li>
+        <li><a id="soup" className="navbtn hover:bg-red-700" href="#mainpart">About</a></li>
+        <li><a id="chicken" className="navbtn hover:bg-red-700" href="#mainpart">Blog</a></li>
+        <li><a id="beef" className="navbtn hover:bg-red-700" href="#mainpart">FAQ</a></li>
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
-  </div>
+
+ {/* humbege menu  */}
+ <div className='navbar-end hidden lg:flex md:flex gap-5'>
+ <li><a id="chicken" className="ml-20navbtn hover:bg-red-700" href="#mainpart">Buy Book</a></li>
+ <li><a id="beef" className="navbtn hover:bg-red-700" href="#mainpart">Sign In</a></li>
+ </div>
+<div className=" navbar-end lg:hidden md:hidden">
+
+<div className="dropdown">
+<div tabIndex="0" role="button" className="btn btn-ghost btn-circle">
+<svg
+xmlns="http://www.w3.org/2000/svg"
+className="h-5 w-5"
+fill="none"
+viewBox="0 0 24 24"
+stroke="currentColor">
+<path
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  strokeWidth="2"
+  d="M4 6h16M4 12h16M4 18h7" />
+</svg>
 </div>
+
+<ul
+tabIndex="0"
+className="menu menu-sm dropdown-content z-30 bg-slate-800 rounded-box -translate-x-20  mt-3 w-32 p-2 shadow hover:bg-slate-400">
+<li><a id="potato"  className="hover:bg-red-700" href="#mainpart">Home</a></li>
+<li><a id="soup"  className="hover:bg-red-700" href="#mainpart">About</a></li>
+<li><a id="chicken"  className="hover:bg-red-700" href="#mainpart">Blog</a></li>
+<li><a id="beef"  className="hover:bg-red-700" href="#mainpart">FAQ</a></li>
+<li><a id="chicken"  className="hover:bg-red-700" href="#mainpart">Buy Book</a></li>
+<li><a id="beef"  className="hover:bg-red-700" href="#mainpart">Sign in</a></li>
+</ul>
+
+</div>
+</div>
+
+{/* <!-- end humberg --> */}
+</div>
+{/* <!-- Navbar end --> */}
+{/* <!-- banner start --> */}
 </>
     
     );
