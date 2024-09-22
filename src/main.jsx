@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Bpp from './App.jsx'
-import Navbar from './componants/shared/navbar.jsx'
+import {RouterProvider} from "react-router-dom";
 import './index.css'
+import router from "./router"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Navbar />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
