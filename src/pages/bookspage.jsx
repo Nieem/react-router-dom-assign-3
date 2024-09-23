@@ -2,6 +2,7 @@ import React from 'react';
 import { useState,useEffect } from 'react';
  import axios from 'axios';
  import jsondata from '../assets/book-data.json' 
+import SingleBook from '../componants/shared/singlebook';
 
 const  Bookspage = () => {
     const [bookList, setBookList] = useState([]); 
@@ -17,15 +18,20 @@ const  Bookspage = () => {
 
 
     return (
-        <div className='container bg-slate-500 my-28 mx-auto'>
-           { bookList.map((item,i) => ( 
-                        // Presently we only fetch 
-                        // title from the API 
-                        <h4 key={i}>{item.author}</h4> 
+        <>
+        <div className='container my-12 relative p-7'>
+
+        
+        <div className=' justify-center grid grid-cols-1 gap-2  lg:grid-cols-3 md:grid-cols-2'>
+           { bookList.map((book,i) => ( 
+                        <SingleBook key={book.bookId} book={book}/>
+
                     )) 
 
                 }
         </div>
+        </div>
+        </>
     );
 };
 export default Bookspage;
