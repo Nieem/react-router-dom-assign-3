@@ -14,11 +14,12 @@ const SingleBook = (props) => {
       alt="Shoes"
       className="rounded-xl h-40" />
   </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
+  <div className="card-body items-center text-center -space-y-2">
+    <h2 className="text-3xl text-red-950 ">{book.bookName}</h2>
+    <span>By {book.author}</span>
+    <p> Category : {book.category}</p>
+    <div className="card-actions mt-3">
+      <button className="btn  py-0 bg-slate-500">Book Details</button>
     </div>
   </div>
 </div>
