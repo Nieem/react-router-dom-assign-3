@@ -18,12 +18,9 @@ const  Bookspage = () => {
 
 
     return (
-        <>
         <div className='container my-12 relative p-7'>
-
-        
         <div className=' justify-center grid grid-cols-1 gap-2  lg:grid-cols-3 md:grid-cols-2'>
-           { bookList.map((book,i) => ( 
+           { bookList.map((book) => ( 
                         <SingleBook key={book.bookId} book={book}/>
 
                     )) 
@@ -31,7 +28,6 @@ const  Bookspage = () => {
                 }
         </div>
         </div>
-        </>
     );
 };
 export default Bookspage;

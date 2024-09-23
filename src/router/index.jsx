@@ -22,7 +22,7 @@ const router=createBrowserRouter([
         } ,
 
         {
-            path:`${ROUTES.SINGLE_BOOKS}`,
+            path:`${ROUTES.SINGLE_BOOKS.STATIC}`,
             element:<BookDetailspage/>  
 
        } ,

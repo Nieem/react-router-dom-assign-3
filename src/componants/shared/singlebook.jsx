@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../routes';
 
 const SingleBook = (props) => {
  const {book}=props;
-
-
+ 
     return (
-        <div>
-<div className="card card-compact bg-base-100  shadow-xl border-solid  border-2 border-x-gray-300 hover:border-x-red-500">
-  <figure className="px-10 pt-10">
+    <Link to={ROUTES.SINGLE_BOOKS.DYNAMIC(book.bookId)}>
+    <div className="card card-compact bg-base-100  shadow-xl border-solid  border-2 border-x-gray-300 hover:border-x-red-500">
+    <figure className="px-10 pt-10">
     <img
       src={book.image}
       alt="Shoes"
@@ -21,7 +22,7 @@ const SingleBook = (props) => {
     </div>
   </div>
 </div>
-        </div>
+ </Link>
     );
 };
 

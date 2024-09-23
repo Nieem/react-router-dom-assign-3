@@ -3,6 +3,6 @@ export const ROUTES={
     BOOKS:"/books",
     SINGLE_BOOKS:{
         STATIC:"/books/:bookId",
-        DYNAMIC:($bookId)=>'/books/${bookId}',
+        DYNAMIC:(bookId)=>`/books/${bookId}`,
     }
 };
