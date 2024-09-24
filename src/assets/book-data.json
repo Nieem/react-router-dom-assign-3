@@ -9,7 +9,7 @@
     "totalPages": 304,
     "rating": 4.5,
     "category": "Fiction",
-    "tags": ["Philosophical", "Fantasy", "Self-Discovery"],
+    "tags": ["Philosophical", ", Fantasy,", " Self-Discovery"],
     "publisher": "Canongate Books",
     "yearOfPublishing": 2020
   },
@@ -22,7 +22,7 @@
     "totalPages": 448,
     "rating": 4.8,
     "category": "Memoir",
-    "tags": ["Inspiring", "Political", "Biography"],
+    "tags": ["Inspiring", ", Political,", " Biography"],
     "publisher": "Crown Publishing",
     "yearOfPublishing": 2018
   },
@@ -35,7 +35,7 @@
     "totalPages": 334,
     "rating": 4.7,
     "category": "Biography",
-    "tags": ["Memoir", "Education", "Family"],
+    "tags": ["Memoir", ", Education", ", Family"],
     "publisher": "Random House",
     "yearOfPublishing": 2018
   },
@@ -48,7 +48,7 @@
     "totalPages": 368,
     "rating": 4.6,
     "category": "Mystery",
-    "tags": ["Nature", "Crime", "Romance"],
+    "tags": ["Nature", ", Crime", ", Romance"],
     "publisher": "G.P. Putnam's Sons",
     "yearOfPublishing": 2018
   },
@@ -61,7 +61,7 @@
     "totalPages": 320,
     "rating": 4.9,
     "category": "Self-Help",
-    "tags": ["Productivity", "Self-Improvement", "Behavior"],
+    "tags": ["Productivity", ", Self-Improvement", ", Behavior"],
     "publisher": "Penguin Random House",
     "yearOfPublishing": 2018
   },
@@ -74,7 +74,7 @@
     "totalPages": 443,
     "rating": 4.7,
     "category": "History",
-    "tags": ["Anthropology", "Evolution", "Civilization"],
+    "tags": ["Anthropology", ", Evolution", ", Civilization"],
     "publisher": "Harper",
     "yearOfPublishing": 2014
   },
@@ -87,7 +87,7 @@
     "totalPages": 336,
     "rating": 4.4,
     "category": "Thriller",
-    "tags": ["Suspense", "Psychological", "Mystery"],
+    "tags": ["Suspense", ", Psychological", ", Mystery"],
     "publisher": "Celadon Books",
     "yearOfPublishing": 2019
   },
@@ -100,7 +100,7 @@
     "totalPages": 412,
     "rating": 4.8,
     "category": "Science Fiction",
-    "tags": ["Space", "Adventure", "Epic"],
+    "tags": ["Space", ", Adventure", ", Epic"],
     "publisher": "Chilton Books",
     "yearOfPublishing": 1965
   },
@@ -113,7 +113,7 @@
     "totalPages": 208,
     "rating": 4.3,
     "category": "Fiction",
-    "tags": ["Spiritual", "Adventure", "Philosophical"],
+    "tags": ["Spiritual", ", Adventure", ", Philosophical"],
     "publisher": "HarperOne",
     "yearOfPublishing": 1988
   }

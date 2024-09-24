@@ -5,6 +5,7 @@ import BookDetailspage from "../pages/bookdetailspage";
 import Homepage from "../pages/homepage";
 import { ROUTES } from "../routes";
 import NotFoundPage from "../pages/notfound-404";
+import Faqpage from "../pages/faq";
 
 const router=createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router=createBrowserRouter([
             element:<BookDetailspage/>  
 
        } ,
+       {
+        path:"/faq",
+        element:<Faqpage/>
+       },
 
        {
         path:"/404", 

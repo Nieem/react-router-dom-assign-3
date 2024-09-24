@@ -1,11 +1,17 @@
 import React from 'react';
 import Bookspage from './bookspage';
+import Navbar from '../componants/shared/navbar';
+import Banner from '../componants/banner';
+import Footer from '../componants/shared/footer';
 
 const Homepage = () => {
     return (
-        <div className='my-44  bg-slate-300 text-center'>
-            <p >Home page</p>
-        </div>
+       <>
+       
+       <Banner/>
+       <Bookspage/>
+       
+       </>
     );
 };
 
