@@ -1,8 +1,25 @@
-# React + Vite
+# King Food Bar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### *project features*
+1. View all book items in one gallery.
+2.  view book details and add to cart
+3. order book online 
+#### *project details*
+-design overview:
+  1. *a beautiful navbar with app logo in the left side & Hamburger menu on the right side.*
+  2. *banner is good looking*
+  3. *books  are showing on card,
+  4. *Frequently asked questions are added for customers assistance*
+  5. *a rich footer is added*
+  
+  **special feature**: 
 
-Currently, two official plugins are available:
+1. full functional responsive inculding mobile,tab & pcs screen.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Technology Covered:
+1. CSS Framework: Tailwind CSS
+2. Component Library for Tailwind CSS: DaisyUI
+3. Vite + React
+##### -> Live link of my Web page is <https://raysul-hasan.w3spaces.com/>
+
+***Bootcamp TOT serial No: 40
