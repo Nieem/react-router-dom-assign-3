@@ -59,7 +59,7 @@ getBookById();
   <div className="hero-content flex-col lg:flex-row px-7">
     <img
       src={book.image}
-      className="max-w-sm rounded-lg shadow-2xl lg:w-84" />
+      className="w-full rounded-lg shadow-2xl lg:w-1/2" />
     <div>
       <h1 className="text-5xl font-bold">{book.bookName}</h1>
       <p className="py-6">

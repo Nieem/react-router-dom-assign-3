@@ -6,6 +6,8 @@ import Homepage from "../pages/homepage";
 import { ROUTES } from "../routes";
 import NotFoundPage from "../pages/notfound-404";
 import Faqpage from "../pages/faq";
+import About from "../pages/about";
+import Blog from "../pages/blog";
 
 const router=createBrowserRouter([
     {
@@ -38,7 +40,14 @@ const router=createBrowserRouter([
         path:"/faq",
         element:<Faqpage/>
        },
-
+       {
+        path:"/about",
+        element:<About/>
+       },
+       {
+        path:"/blog",
+        element:<Blog/>
+       },
        {
         path:"/404", 
         element:<Navigate to="/404"/>,
