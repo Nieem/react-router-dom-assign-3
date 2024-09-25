@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <>
-   <div className="navbar fixed  bg-sky-950 top-0 text-white z-20" id="nabbarhide">
+   <div className="navbar  bg-sky-950 top-0 text-white z-20" id="nabbarhide -z-10">
   
 <div className="navbar-start">
     <img src={logo} alt="Logo" className="w-14"/>
@@ -22,7 +22,7 @@ const Navbar = () => {
      <li><a id="potato"  className="navbtn hover:bg-red-700 active1" href="/" >Home</a></li>
         <li><a id="soup" className="navbtn hover:bg-red-700" href="#mainpart">About</a></li>
         <li><a id="chicken" className="navbtn hover:bg-red-700" href="#mainpart">Blog</a></li>
-        <li><a id="beef" className="navbtn hover:bg-red-700" href="#mainpart">FAQ</a></li>
+        <li><a id="beef" className="navbtn hover:bg-red-700" href="/faq">FAQ</a></li>
     </ul>
   </div>
 

@@ -1,11 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import   jsondata from "../assets/book-data.json";
+import { toast,ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetailspage = () => {
     const [bookdetails,setbookdetail]=useState([]);
-    let bookID= useParams();
+    const bookID= useParams();
     console.log(bookID);
+
+    const notify = (book) => 
+      {
+        //console.log(book.bookID);
+        toast("Added to Cart"+ bookID);
+
+      }
+
     const getBookById=()=>{
         const loadData=[...jsondata];
         const filterdata=loadData.filter(b=>b.bookId==bookID.bookId);
@@ -13,6 +23,8 @@ const BookDetailspage = () => {
         //console.log(loadData);
         console.log(bookdetails);
     }
+
+   
 
 useEffect(()=>{
 getBookById();
@@ -50,10 +62,18 @@ getBookById();
     <div>
       <h1 className="text-5xl font-bold">{book.bookName}</h1>
       <p className="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
+        <span className='font-bold'>Author:</span><span className='italic'> {book.author}</span> &nbsp;
+        <span className='font-bold'>Category:</span> <span>{book.category}</span>&nbsp;
+        <span className='font-bold'>Review:</span> <span> {book.review}</span>&nbsp;
+        <span className='font-bold'>Tages:</span> <span> {book.tags}</span>&nbsp;
+        <span className='font-bold'>Total Page:</span> <span> {book.totalPages}</span>&nbsp;
+        <span className='font-bold'>Publisher:</span> <span> {book.publisher}</span>&nbsp;
+        <span className='font-bold'>Year of Publishing:</span> <span> {book.yearOfPublishing}</span>&nbsp;
+        <span className='font-bold'>Rating:</span> <span> {book.rating}</span>&nbsp;
       </p>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="btn btn-primary" onClick={notify}>Wise to Read</button>
+      <button className="btn btn-accent ms-2" onClick={notify}>Add to Cart</button>
+      <ToastContainer/>
     </div>
   </div>
 </div>
