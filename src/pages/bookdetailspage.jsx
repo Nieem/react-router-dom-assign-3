@@ -9,10 +9,11 @@ const BookDetailspage = () => {
     const bookID= useParams();
     console.log(bookID);
 
-    const notify = (book) => 
+    const notify = () => 
       {
+        bookdetails?.map((book)=> (
         //console.log(book.bookID);
-        toast("Added to Cart"+ bookID);
+        toast(book.bookId+', '+book.bookName+" has Successfully Added to the Wise List")));
 
       }
 
